@@ -4,9 +4,6 @@ Jenath Srikanth: au634825 ny branch test
 
 Jacob Vad: jacobvad (studerende)
 
-<<<<<<< HEAD
-Thomas
-=======
 Ricky Schultz aka Volvofar
 
 Thomas
@@ -24,5 +21,5 @@ Jesper
 
 Jenath input fra Terminal
 
-8502d160f01e2b479b3bac7cbcc7e384c9c5f816
->>>>>>> 805e35673b0a78c7202bdd13165a28c88b7abf8e
+hello
+
