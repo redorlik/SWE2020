@@ -13,14 +13,14 @@ def test_simple():
 def test_decode_simple():
     assert decode('2k3a') == 'kkaaa'
 
-def test_decode_simple():
+def test_decode_simple_1():
     assert decode('') == ''
 
-def test_decode_simple():
+def test_decode_simple_2():
     assert decode('41') == '1111'
 
 @pytest.mark.skip()
-def test_decode_simple():
+def test_decode_simple_3():
     assert decode('123') == '333333333333'
 
 def test_enkod_dekod():
