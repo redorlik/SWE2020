@@ -1,0 +1,36 @@
+version: '3.8'
+
+services:
+  web:
+    restart: always
+    image: nginx:latest
+    container_name: nginx
+    ports:
+      - "80:80"
+    volumes:
+      - ./nginx/nginx.conf:/etc/nginx/nginx.conf
+    
+  app:
+    restart: always
+    build: ./flask
+    container_name: flask
+    env_file:
+      - ./postgres/database.conf
+
+  database:
+    restart: always
+    image: postgres:latest
+    container_name: postgres
+    ports:
+      - 5432:5432
+    env_file:
+      - ./postgres/database.conf
+    volumes:
+      - data:/var/lib/postgresql/data
+
+volumes:
+    data:
+    
+    
+
+

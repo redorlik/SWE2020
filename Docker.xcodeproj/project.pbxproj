@@ -1,0 +1,79 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXFileReference section */
+		D95E032D257D784A007AF59D /* nginx */ = {isa = PBXFileReference; lastKnownFileType = folder; path = nginx; sourceTree = "<group>"; };
+		D95E032E257D78E7007AF59D /* flask */ = {isa = PBXFileReference; lastKnownFileType = folder; path = flask; sourceTree = "<group>"; };
+		D95E032F257D78F0007AF59D /* postgres */ = {isa = PBXFileReference; lastKnownFileType = folder; path = postgres; sourceTree = "<group>"; };
+		D95E0330257D795C007AF59D /* docker-compose.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = "docker-compose.yml"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		D95E0325257D7810007AF59D = {
+			isa = PBXGroup;
+			children = (
+				D95E0330257D795C007AF59D /* docker-compose.yml */,
+				D95E032D257D784A007AF59D /* nginx */,
+				D95E032E257D78E7007AF59D /* flask */,
+				D95E032F257D78F0007AF59D /* postgres */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXProject section */
+		D95E0326257D7810007AF59D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1220;
+			};
+			buildConfigurationList = D95E0329257D7810007AF59D /* Build configuration list for PBXProject "Docker" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D95E0325257D7810007AF59D;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+			);
+		};
+/* End PBXProject section */
+
+/* Begin XCBuildConfiguration section */
+		D95E032A257D7810007AF59D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		D95E032B257D7810007AF59D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D95E0329257D7810007AF59D /* Build configuration list for PBXProject "Docker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D95E032A257D7810007AF59D /* Debug */,
+				D95E032B257D7810007AF59D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D95E0326257D7810007AF59D /* Project object */;
+}
