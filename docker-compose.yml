@@ -12,8 +12,6 @@ services:
   flask:
     build: "./flask"
     container_name: app
-    volumes:
-      - "./flask/:/usr/src/app/"
 
   database:
     image: postgres
