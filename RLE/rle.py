@@ -4,12 +4,11 @@ def decode(st):
     res = []
     st = list(st)
     while st:
-        res.append(int(st.pop(0))*st.pop(0))  
+        res.append(int(st.pop(0))*st.pop(0))
     return ''.join(res)
 
 def rle(st):
     j = 0
-
     res = []
     while j < len(st):
         i = 0
