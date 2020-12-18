@@ -1,0 +1,29 @@
+
+version: "3.7"
+
+services:
+  flask:
+    build: .
+    ports:
+      - "5000:5000"
+    volumes:
+      - .:/SWE2020
+    environment:
+      FLASK_ENV: development
+
+  web:
+    image: nginx
+    ports:
+      - "80:80"
+    volumes:
+      - ./nginx.conf:/etc/nginx.conf:ro
+      
+  database:
+    image: "postgres" #for nyeste version
+    env_file:
+      - database.env
+    volumes:
+      - database-data:/var/lib/postgresql/data/ #beholder data
+
+volumes:
+  database-data:  
